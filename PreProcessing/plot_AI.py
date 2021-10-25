@@ -15,6 +15,7 @@ fig_out_path = '../../Figures/AI/'
 #	ua500,  ua700,  ua850,  ua950, 
 #	va500,  va700,  va850,  va950, 
 #	phi500, phi700, phi850, phi950,
+#       tas, pr
 var = 'tas' 
 exp_name = '3km' # '3km', '12km'
 
