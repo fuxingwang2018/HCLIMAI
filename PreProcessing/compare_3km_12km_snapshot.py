@@ -6,7 +6,7 @@ plt.switch_backend('agg')
 from map_plot import MapPlot
 import numpy as np
 
-data_folder = '/nobackup/rossby26/users/sm_fuxwa/AI'
+data_folder = '/nobackup/rossby26/users/sm_fuxwa/AI/standard_data/'
 fig_out_path = '/home/sm_fuxwa/Figures/AI/'
 
 # 3km:  tas, pr 
@@ -16,7 +16,7 @@ fig_out_path = '/home/sm_fuxwa/Figures/AI/'
 #	va500,  va700,  va850,  va950, 
 #	phi500, phi700, phi850, phi950,
 #       tas, pr
-var = 'pr' 
+var = 'tas' 
 exp_name = '3km' # 'EOBS20', '3km', '12km'
 
 plot_period = '1h'
@@ -33,7 +33,7 @@ elif plot_period == '1d':
     scale_factor = 86400 
 
 month = 10
-period = '200001010030-200912312330'
+period = '200001010000-200912312300' #'200001010000-200912312100' #'200001010030-200912312330'
 freq='1hr'
 month_dic = {	'1':'January',
 		'2':'February',
@@ -73,7 +73,7 @@ lon_0_def = 11.0
 fig_title = " "
 lat_name = 'lat' #'latitude'
 lon_name = 'lon' #'longitude'
-proj_def = 'lcc'
+proj_def = 'lcc'  # lcc, cyl, ortho
 res_def = 'i'
 fig_type = '.png'
 label_def = ''
